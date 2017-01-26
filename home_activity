@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_naslovna"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.android.meg.NaslovnaActivity"
+    android:weightSum="1">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#2fbac5">
+
+    <Button
+        android:layout_width="25dp"
+        android:id="@+id/dialer"
+        android:layout_height="25dp"
+        android:onClick="menu"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginLeft="50dp"
+        android:background="@android:drawable/ic_dialog_dialer"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:id="@+id/edit"
+        android:layout_height="25dp"
+        android:onClick="createadd"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#ffffff"
+        android:background="@android:drawable/ic_menu_edit"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:id="@+id/mail"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#ffffff"
+        android:background="@android:drawable/ic_dialog_email"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:id="@+id/search"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#ffffff"
+        android:background="@android:drawable/ic_menu_search"/>
+    <Button
+        android:layout_width="25dp"
+        android:id="@+id/security"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#ffffff"
+        android:background="@android:drawable/ic_secure"/>
+    <Button
+        android:layout_width="35dp"
+        android:id="@+id/notification"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#ffffff"
+        android:background="@android:drawable/ic_lock_silent_mode_off"/>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/reklama"
+            android:background="@drawable/akcija"
+            android:cropToPadding="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="#eaeaea">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="125dp"
+                android:id="@+id/oglas1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/persil"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+            android:id="@+id/oglastext"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur, metus a cursus posuere, metus leo mollis felis, at bibendum risus nulla auctor velit."
+                android:padding="10dp"
+                android:background="#ffffff"
+            android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="#eaeaea"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="125dp"
+                android:id="@+id/oglas2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/pur"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="#ffffff"
+                android:id="@+id/oglastext1"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur, metus a cursus posuere, metus leo mollis felis, at bibendum risus nulla auctor velit."
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
