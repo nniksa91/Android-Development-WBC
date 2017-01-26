@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_naslovna"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.android.meg.NaslovnaActivity"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2fbac5">
+
+        <Button
+            android:layout_width="25dp"
+            android:id="@+id/dialer"
+            android:layout_height="25dp"
+            android:onClick="createreturn"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:background="@android:drawable/ic_dialog_dialer"/>
+
+        <Button
+            android:layout_width="25dp"
+            android:id="@+id/edit"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@android:drawable/ic_menu_edit"/>
+
+        <Button
+            android:layout_width="25dp"
+            android:id="@+id/mail"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@android:drawable/ic_dialog_email"/>
+
+        <Button
+            android:layout_width="25dp"
+            android:id="@+id/search"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@android:drawable/ic_menu_search"/>
+        <Button
+            android:layout_width="25dp"
+            android:id="@+id/security"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@android:drawable/ic_secure"/>
+        <Button
+            android:layout_width="35dp"
+            android:id="@+id/notification"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@android:drawable/ic_lock_silent_mode_off"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:background="@drawable/grad"
+                android:id="@+id/profil"
+                android:layout_height="250dp"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profil_text"
+                android:layout_marginLeft="5dp"
+                android:text="Company name"
+                android:textSize="24sp"
+                android:layout_below="@id/profil" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:backgroundTint="#2fbac5"
+                android:id="@+id/buttoninfo"
+                android:background="@android:drawable/ic_dialog_info"
+                android:layout_below="@id/profil"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/buttonplus"
+                android:backgroundTint="#2fbac5"
+                android:background="@android:drawable/ic_input_add"
+                android:layout_below="@id/profil"
+                android:layout_toLeftOf="@id/buttoninfo"
+                android:layout_margin="5dp"/>
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/button1"
+                android:backgroundTint="#2fbac5"
+                android:background="@android:drawable/ic_menu_edit"
+                android:layout_below="@id/profil"
+                android:layout_toLeftOf="@id/buttonplus"
+                android:layout_margin="5dp"/>
+
+        </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Primary activity"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#858585"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend fringilla laoreet. Vivamus at ipsum elementum, aliquet odio nec, scelerisque quam."
+                android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="My Adds"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#c7c7c7"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/persil"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend fringilla laoreet. Vivamus at ipsum elementum, aliquet odio nec, scelerisque quam."
+                android:textSize="14sp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
